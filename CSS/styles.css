@@ -1,3 +1,35 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?25j82");
+  src: url("../fonts/icomoon.eot?25j82#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?25j82") format("truetype"),
+    url("../fonts/icomoon.woff?25j82") format("woff"),
+    url("../fonts/icomoon.svg?25j82#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-main-hero-share:before {
+  content: "\e901";
+}
+
 body {
   font-size: 13px;
   font-family: "Manrope", sans-serif;
@@ -11,8 +43,8 @@ main {
   width: 735px;
   height: 280px;
   background-color: white;
-  /* margin: 0 auto;
-  margin-top: 13%; */ /*Esta es la alineación al centro! Line 11 y 12, debo activarla*/
+  margin: 0 auto;
+  margin-top: 13%; /*Esta es la alineación al centro! Line 11 y 12, debo activarla*/
 }
 .main-hero-image_table img {
   height: 280px;
@@ -36,7 +68,7 @@ main {
   align-items: center;
   padding-right: 40px;
   padding-left: 40px;
-  padding-top: 20px;
+  padding-top: 15px;
 }
 .main-hero-photo img {
   border-radius: 50%;
@@ -55,15 +87,21 @@ main {
 .main-hero-date {
   color: hsl(212, 23%, 69%);
 }
-.main-hero-share {
+.icon-main-hero-share {
   border-radius: 50%;
   height: 32px;
   width: 32px;
   background-color: hsl(210, 46%, 95%);
   display: block;
-  line-height: 2;
+  line-height: 32px;
   text-align: center;
+  color: hsl(217, 19%, 35%);
 }
+.icon-main-hero-share:hover {
+  background-color: hsl(227, 19%, 39%);
+  color: white;
+}
+
 .main-hero-share img {
   margin: 0 auto;
 }
@@ -71,9 +109,13 @@ main {
   width: 250px;
   margin: 0;
   position: absolute;
-  left: 554px;
-  top: 117px;
+  left: -648px;
+  top: 305px;
 }
+.main-socialMedia.is-active {
+  left: 907px;
+}
+
 .main-socialMedia-Rec {
   border-radius: 10px;
   background-color: hsl(227, 19%, 39%);
@@ -102,4 +144,69 @@ main {
   border-right: 8px solid transparent;
   border-top: 12px solid hsl(227, 19%, 39%);
   margin: 0 auto;
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    width: auto;
+    height: auto;
+    margin: 20px;
+    margin-top: 60px;
+  }
+  .hero {
+    display: block;
+    border-radius: 10px;
+  }
+  .main-hero-image_table img {
+    width: 100%;
+    height: 250px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .main-hero-textH2 {
+    color: hsl(217, 19%, 35%);
+    font-size: 10.5px;
+    line-height: 23px;
+  }
+  .main-hero-textP {
+    color: hsl(212, 23%, 69%);
+    font-size: 12.9px;
+    line-height: 20px;
+  }
+  .main-hero-nameDate p {
+    margin-right: 60px;
+  }
+  .main-hero-name {
+    color: hsl(217, 19%, 35%);
+    font-size: 12px;
+  }
+  .main-hero-date {
+    font-weight: 500;
+    font-size: 12px;
+  }
+  .main-hero-personDetails {
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .main-socialMedia.is-active {
+    left: 20px;
+    top: 530px;
+    width: 334px;
+  }
+  .main-socialMedia-Rec {
+    border-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .main-socialMedia-Tri {
+    display: none;
+  }
+  .icon-main-hero-share {
+    z-index: 4;
+  }
+  .icon-main-hero-share:hover {
+    background-color: hsl(227, 19%, 39%);
+    color: white;
+  }
 }

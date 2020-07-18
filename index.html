@@ -44,13 +44,13 @@
                 </p>
               </div>
             </div>
-            <div class="main-hero-share">
-              <img src="./images/icon-share.svg" alt="" />
-            </div>
+            <i class="icon-main-hero-share" id="icon-main-hero-share">
+              
+            </i>
           </div>
         </div>
       </div>
-      <div class="main-socialMedia">
+      <div class="main-socialMedia" >
         <div class="main-socialMedia-Rec">
           <p>S H A R E</p>
           <img src="./images/icon-facebook.svg" alt="" /
@@ -71,4 +71,22 @@
       >. Coded by <a href="#">Tatiarc</a>.
     </div> -->
   </body>
+  <script>
+
+    const socialMedia = document.querySelector(".main-socialMedia");
+    // console.log(socialMedia);
+    
+    const socialShare = document.querySelector("#icon-main-hero-share");
+    // console.log(socialShare);
+
+    socialShare.addEventListener("click", hideShow);
+
+    function hideShow(){
+      if (socialMedia.classList.contains("is-active")){
+    socialMedia.classList.remove("is-active");
+      }else{
+    socialMedia.classList.add("is-active");
+      }
+    }
+  </script>
 </html>
