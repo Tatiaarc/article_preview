@@ -1,0 +1,105 @@
+body {
+  font-size: 13px;
+  font-family: "Manrope", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(210, 46%, 95%);
+}
+main {
+  /* border: 1px solid red; */
+  border-radius: 10px;
+  width: 735px;
+  height: 280px;
+  background-color: white;
+  /* margin: 0 auto;
+  margin-top: 13%; */ /*Esta es la alineación al centro! Line 11 y 12, debo activarla*/
+}
+.main-hero-image_table img {
+  height: 280px;
+  width: 300px;
+}
+.hero {
+  display: flex;
+}
+.main-hero-textH2 {
+  padding-right: 40px;
+  padding-left: 40px;
+  color: hsl(217, 19%, 35%);
+}
+.main-hero-textP {
+  padding-right: 40px;
+  padding-left: 40px;
+  color: hsl(214, 17%, 51%);
+}
+.main-hero-personDetails {
+  display: flex;
+  align-items: center;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+.main-hero-photo img {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+.main-hero-nameDate p {
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 150px;
+}
+.main-hero-name {
+  color: hsl(217, 19%, 35%);
+  font-weight: 700;
+}
+.main-hero-date {
+  color: hsl(212, 23%, 69%);
+}
+.main-hero-share {
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  background-color: hsl(210, 46%, 95%);
+  display: block;
+  line-height: 2;
+  text-align: center;
+}
+.main-hero-share img {
+  margin: 0 auto;
+}
+.main-socialMedia {
+  width: 250px;
+  margin: 0;
+  position: absolute;
+  left: 554px;
+  top: 117px;
+}
+.main-socialMedia-Rec {
+  border-radius: 10px;
+  background-color: hsl(227, 19%, 39%);
+  width: 100%;
+  height: 55px;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+.main-socialMedia-Rec p {
+  color: white;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: hsl(212, 23%, 69%);
+}
+.main-socialMedia-Rec img {
+  height: 20px;
+  width: 20px;
+  padding: 10px;
+}
+.main-socialMedia-Tri {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 12px solid hsl(227, 19%, 39%);
+  margin: 0 auto;
+}
